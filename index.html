@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Flex Box</title>
+    <style>
+        *, *::before, *::after{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 75px;
+            background-color: bisque;
+            display: flex;
+        }
+        nav a{
+            display: block;
+            height: 100%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            background-color: aqua;
+            color: black;
+            transition: .5s all cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            /* flex-basis: 300px;
+            flex-shrink: 1;
+            flex-grow: 1; */
+            flex: 1 1 300px;
+
+        }
+        nav a:nth-child(2){
+            background-color: aquamarine;
+            flex-grow: 1; /*Flex grow grows with the with of the container. The higher the number,
+            the faster it grows. Same goes for the flex shrink. This works well with responsive design*/
+            margin: auto 10px;
+            
+            /* flex: 1; */
+        }
+        nav a:last-child{
+            justify-self: flex-end;
+        }
+        nav a:hover{
+            background-color: black;
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" target="_blank" rel="noopener noreferrer">Home</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">About Us</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">Contact Us</a>
+    </nav>
+</body>
+</html>
