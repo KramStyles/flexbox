@@ -51,6 +51,20 @@
             color: aqua;
         }
 
+        @media screen and (max-width: 600px) {
+            nav a {
+                flex-basis: 50%;
+            }
+            nav a:nth-child(2){
+                order: 1;
+                flex-basis: 100%;
+            }
+            nav{
+                flex-wrap: wrap;
+            }
+
+        }
+
     </style>
 </head>
 <body>
