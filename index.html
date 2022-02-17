@@ -51,6 +51,24 @@
             color: aqua;
         }
 
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .container .normal{
+            flex: 1 1 250px;
+        }
+
+        .container .big{
+            flex: 1 1 350px;
+        }
+
         @media screen and (max-width: 600px) {
             nav a {
                 flex-basis: 50%;
@@ -73,5 +91,20 @@
         <a href="#" target="_blank" rel="noopener noreferrer">About Us</a>
         <a href="#" target="_blank" rel="noopener noreferrer">Contact Us</a>
     </nav>
+
+    <div class="container">
+        <div class="normal"><img src="https://images.pexels.com/photos/11041568/pexels-photo-11041568.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/></div>
+        <div  class="big"><img src="https://images.pexels.com/photos/10927209/pexels-photo-10927209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/></div>
+        <div class="big"><img src="https://images.pexels.com/photos/11207765/pexels-photo-11207765.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"/></div>
+        <div class="normal"><img src="https://images.pexels.com/photos/11055830/pexels-photo-11055830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/></div>
+        <div class="big"><img src="https://images.pexels.com/photos/11216549/pexels-photo-11216549.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"/></div>
+        <div class="normal"><img src="https://images.pexels.com/photos/11210402/pexels-photo-11210402.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"/></div>
+        <div class="big"><img src="https://images.pexels.com/photos/11041568/pexels-photo-11041568.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/></div>
+        <div class="normal"><img src="https://images.pexels.com/photos/10927209/pexels-photo-10927209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/></div>
+        <div class="big"><img src="https://images.pexels.com/photos/11207765/pexels-photo-11207765.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"/></div>
+        <div class="big"><img src="https://images.pexels.com/photos/11055830/pexels-photo-11055830.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/></div>
+        <div class="normal"><img src="https://images.pexels.com/photos/11216549/pexels-photo-11216549.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"/></div>
+    </div>
+
 </body>
 </html>
