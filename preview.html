@@ -25,24 +25,40 @@
         }
         .container{
             width: 75%;
-            min-height: 600px;
+            min-height: 500px;
             background-color: var(--pri);
             margin: auto;
             display: flex;
         }
         .container div{
-            background-color: var(--sec);
             flex: 1;
         }
         .container img{
             height: 100%;
             width: 100%;
+            object-fit: cover;
+        }
+        .container div:first-child{
+            padding: 50px;
+            color: white;
+            font-family: Inter, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container h1{
+            font-weight: 700;
+            font-size: 40px;
+            margin: 30px 0;
+        }
+        .container span{
+            color: var(--sec);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div></div>
+        <div>
+            <h1>Get <span>Insights</span> that help your business grow</h1>
+            <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+        </div>
         <div>
             <img src="images/preview.png" alt="Preview Image" srcset="">
         </div>
