@@ -13,21 +13,40 @@
         }
         ul{
             display: flex;
-            justify-content: space;
+            flex-wrap: wrap;
+            list-style-type: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            align-content: stretch;
+            background-color: bisque;
+            height: 700px;
+
         }
         li{
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
             background-color: aquamarine;
+            display: flex;
             margin: 8px;
+            flex: 1 1 200px;
+        }
+        li:nth-child(5){
+            order: 4;
+            flex: 2 1 auto;
         }
     </style>
 </head>
 <body>
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>0</li>
     </ul>
 </body>
 </html>
