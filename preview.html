@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/pre_favicon.png" type="image/x-icon">
+    <style>
+        *, *::before, *::after{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --dark: #0A0C1C;
+            --pri: #1B1937;
+            --sec: #AB5CDB;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            background-color: var(--dark);
+        }
+        .container{
+            width: 75%;
+            min-height: 600px;
+            background-color: var(--pri);
+            margin: auto;
+            display: flex;
+        }
+        .container div{
+            background-color: var(--sec);
+            flex: 1;
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div>
+            <img src="images/preview.png" alt="Preview Image" srcset="">
+        </div>
+    </div>
+</body>
+</html>
