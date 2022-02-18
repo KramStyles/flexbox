@@ -46,6 +46,11 @@
             flex-direction: column;
             height: 100%;
         }
+        .container > div:last-child{
+            background-image: url("images/preview.png");
+            background-size: cover;
+            background-blend-mode: multiply;
+        }
         .container h1{
             font-weight: 700;
             font-size: 36px;
@@ -73,6 +78,12 @@
             font-size: 12px;
             letter-spacing: 1px;
         }
+        article{
+            height: 100%;
+            width: 100%;
+            background-color: var(--sec);
+            opacity: 50%;
+        }
 
     </style>
 </head>
@@ -97,7 +108,7 @@
             </section>
         </div>
         <div>
-            <img src="images/preview.png" alt="Preview Image" srcset="">
+            <article></article>
         </div>
     </div>
 </body>
