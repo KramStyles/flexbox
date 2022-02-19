@@ -31,8 +31,9 @@
             height: 500px;
             width: 80%;
             display: flex;
+            flex-wrap: wrap;
         }
-        .container div{
+        .container div {
             padding: 30px;
             flex: 1;
             border-radius: 10px;
@@ -47,15 +48,39 @@
             font-size: 40px;
             text-transform: uppercase;
         }
+        .container img{
+            margin-top: 15px;
+        }
         .orange{
             background-color: var(--orange);
         }
-        button{
+
+        .teal{
+            background-color: var(--teal);
+        }
+
+        .darkie{
+            background-color: var(--darkie);
+        }
+        button {
             border-radius: 25px;
             text-align: center;
             padding: 15px;
             border: none;
             width: 150px;
+        }
+
+        article{
+            margin: 40px 0;
+        }
+
+        @media screen and (max-width: 600px){
+            .container div{
+                margin-top: -15px;
+            }
+            button{
+                margin: 30px 0;
+            }
         }
 
     </style>
@@ -64,8 +89,27 @@
     <div class="container">
         <div class="orange">
             <article>
+                <img src="images/Group2.png" alt="Sedan Image">
                 <h1>sedans</h1>
                 <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+            </article>
+            <button>Learn More</button>
+        </div>
+
+        <div class="teal">
+            <article>
+                <img src="images/Group3.png" alt="Sedan Image">
+                <h1>suvs</h1>
+                <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+            </article>
+            <button>Learn More</button>
+        </div>
+
+        <div class="darkie">
+            <article>
+                <img src="images/Group4.png" alt="Sedan Image">
+                <h1>luxury</h1>
+                <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
             </article>
             <button>Learn More</button>
         </div>
