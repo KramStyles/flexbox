@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stats Preview</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lexend+Deca:wght@200;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lexend+Deca:wght@200;400&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="images/pre_favicon.png" type="image/x-icon">
     <style>
-        *, *::before, *::after{
+        *,
+        *::before,
+        *::after {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
-        :root{
+
+        :root {
             --dark: #0A0C1C;
             --pri: #1B1937;
             --sec: #AB5CDB;
         }
-        body{
+
+        body {
             height: 100vh;
             display: flex;
             background-color: var(--dark);
         }
-        .container{
+
+        .container {
             width: 75%;
             min-height: 500px;
             background-color: var(--pri);
             margin: auto;
             display: flex;
         }
-        .container div{
+
+        .container div {
             flex: 1;
         }
-        .container img{
+
+        .container img {
             height: 100%;
             width: 100%;
             object-fit: cover;
         }
-        .container > div:first-child{
+
+        .container>div:first-child {
             padding: 40px;
             color: white;
             font-family: Inter, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -46,52 +57,85 @@
             flex-direction: column;
             height: 100%;
         }
-        .container > div:last-child{
-            background-image: url("images/preview.png");
+
+        .container>div:last-child {
             background-size: cover;
             background-blend-mode: multiply;
+            position: relative;
         }
-        .container h1{
+
+        .container h1 {
             font-weight: 700;
             font-size: 36px;
             margin: 30px 0;
         }
-        .container span{
+
+        .container span {
             color: var(--sec);
         }
-        .contaner h1, .container p{
+
+        .contaner h1,
+        .container p {
             margin-right: 50px;
             line-height: 30px;
         }
-        section{
+
+        section {
             display: flex;
             margin-top: 100px;
         }
-        section div{
+
+        section div {
             flex: 1;
             margin: 10px 0;
         }
-        section small{
+
+        section small {
             font-family: 'Lexend Deca', 'Courier New', Courier, monospace;
             font-weight: 200;
             text-transform: uppercase;
             font-size: 12px;
             letter-spacing: 1px;
         }
-        article{
+
+        article {
             height: 100%;
             width: 100%;
             background-color: var(--sec);
             opacity: 50%;
+            position: absolute;
+            top: 0;
         }
 
+        @media screen and (max-width: 700px) {
+            .container h1{
+                font-size: 28px;
+            }
+            section{
+                display: block;
+                margin-top: 40px;
+            }
+            section div{
+                margin-bottom: 20px;
+            }
+
+            .container{
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .container p{
+                margin: auto;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div>
             <h1>Get <span>Insights</span> that help your business grow</h1>
-            <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+            <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience,
+                and overall efficiency.</p>
             <section>
                 <div>
                     <h2>10k+</h2>
@@ -109,7 +153,9 @@
         </div>
         <div>
             <article></article>
+            <img src="images/preview.png" alt="" srcset="">
         </div>
     </div>
 </body>
+
 </html>
