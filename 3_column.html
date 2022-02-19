@@ -24,6 +24,7 @@
             min-height: 100vh;
             display: flex;
             background-color: #f2f2f2;
+            font-family: 'Lexend Deca', 'Courier New', Courier, monospace;
         }
         .container{
             margin: auto;
@@ -35,19 +36,38 @@
             padding: 30px;
             flex: 1;
             border-radius: 10px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .container h1{
             font-family: 'Big Shoulders Display', 'Courier New', Courier, monospace;
+            margin: 20px 0;
+            font-size: 40px;
+            text-transform: uppercase;
         }
         .orange{
             background-color: var(--orange);
         }
+        button{
+            border-radius: 25px;
+            text-align: center;
+            padding: 15px;
+            border: none;
+            width: 150px;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="orange">
-
+            <article>
+                <h1>sedans</h1>
+                <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+            </article>
+            <button>Learn More</button>
         </div>
     </div>
 </body>
