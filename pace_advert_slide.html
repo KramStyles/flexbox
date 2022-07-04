@@ -7,12 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="karm-slide-img">
-        <img src="https://pacesetterfrontier.com/wp-content/uploads/2022/07/gov_peter_slide.jpeg" alt="" id="karm-slide-img">
+    <style>
+        .karm-slide-img{
+            width:80%;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .karm-slide-img{
+                width:100%;
+            }
+        }
+    </style>
+    <div class="karm-slide-img" style="margin: 1rem auto">
+        <img src="https://pacesetterfrontier.com/wp-content/uploads/2022/07/gov_peter_slide.jpeg" alt="" id="karm-slide-img" width="100%">
     </div>
 
     <script>
-        let govName = 'peter';
+        let govName = 'frank';
         
         const ChangeAd = () => {
             let imgUrl = `https://pacesetterfrontier.com/wp-content/uploads/2022/07/gov_${govName}_slide.jpeg`;
