@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="karm-slide-img">
+        <img src="https://pacesetterfrontier.com/wp-content/uploads/2022/07/gov_peter_slide.jpeg" alt="" id="karm-slide-img">
+    </div>
+
+    <script>
+        let govName = 'peter';
+        
+        const ChangeAd = () => {
+            let imgUrl = `https://pacesetterfrontier.com/wp-content/uploads/2022/07/gov_${govName}_slide.jpeg`;
+            if (govName === 'peter'){
+                govName = 'frank';
+            } else{
+                govName = 'peter';
+            }
+
+            document.getElementById('karm-slide-img').src = imgUrl;
+        }
+
+        setInterval(ChangeAd, 1000);
+    </script>
+</body>
+</html>
