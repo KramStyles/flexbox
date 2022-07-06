@@ -18,25 +18,35 @@
             }
         }
     </style>
-    <div class="karm-slide-img" style="margin: 1rem auto">
-        <img src="https://pacesetterfrontier.com/wp-content/uploads/2022/07/gov_peter_slide.jpeg" alt="" id="karm-slide-img" width="100%">
+<div class="karm-slide-img" style="margin: 1rem auto">
+        <a href="javascript:;" id="karm-slide-link">
+            <img src="https://pacesetterfrontier.com/wp-content/uploads/2022/07/gov_peter_slide.jpeg" alt="" id="karm-slide-img" width="100%">
+        </a>
     </div>
-
+    
     <script>
-        let govName = 'frank';
+        let govName = 'frank2';
         
         const ChangeAd = () => {
+            let imgLink = document.getElementById('karm-slide-link');
             let imgUrl = `https://pacesetterfrontier.com/wp-content/uploads/2022/07/gov_${govName}_slide.jpeg`;
             if (govName === 'peter'){
-                govName = 'frank';
+                govName = 'frank2';
+                imgLink.target='';
+                imgLink.rel='';
+                imgLink.href='javascript:;';
+
             } else{
                 govName = 'peter';
+                imgLink.target='_blank';
+                imgLink.rel='noopener noreferrer';
+                imgLink.href='https://www.franknwekeii.com/'
             }
 
             document.getElementById('karm-slide-img').src = imgUrl;
         }
 
-        setInterval(ChangeAd, 1000);
+        setInterval(ChangeAd, 3500);
     </script>
 </body>
 </html>
